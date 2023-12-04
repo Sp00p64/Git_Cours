@@ -35,7 +35,7 @@ La commande
 git pull
 ``` 
 Permet de :
-- La commande git pull est un outil essentiel dans la gestion de versions collaboratives lors du développement de logiciels. Elle permet de récupérer les dernières modifications d'un dépôt distant vers votre copie locale du projet.
+- La commande **git pull** est un outil essentiel dans la gestion de versions collaboratives lors du développement de logiciels. Elle permet de récupérer les dernières modifications d'un dépôt distant vers votre copie locale du projet.
 
 <ins>I. Contexte :
 
@@ -72,3 +72,83 @@ git pull origin master
 <ins>Conflits</ins> : Des conflits peuvent survenir si les mêmes parties du code ont été modifiées à la fois localement et à distance. Dans de tels cas, une résolution manuelle des conflits est nécessaire.
 
 <ins>Branches multiples</ins> : Lors de l'utilisation de branches multiples, assurez-vous de spécifier la branche à tirer (pull) depuis le dépôt distant.
+
+### Diff
+
+La commande **git diff** est un outil essentiel pour examiner les différences entre les différentes versions des fichiers dans un projet. Elle permet de visualiser les changements apportés au code entre deux états distincts.
+
+<ins>I. Contexte :</ins>
+
+Analyse des modifications : Dans le développement logiciel, il est crucial de comprendre les changements apportés au code source pour suivre l'évolution du projet.
+
+<ins>II. Fonctionnement de git diff :</ins>
+
+- Comparaison des versions : La commande git diff compare deux états du code pour montrer les différences entre eux.
+
+- États de comparaison : Vous pouvez comparer différents états tels que :
+
+- Différences entre commits : Compare les modifications entre deux points spécifiques de l'historique du projet.
+Différences de fichiers non suivis : Montre les modifications apportées à des fichiers qui ne sont pas encore ajoutés au suivi de version.
+Affichage des changements : git diff affiche les lignes ajoutées, supprimées ou modifiées entre les deux états comparés.
+
+<ins>III. Utilisation :</ins>
+
+Syntaxe de base :
+``` 
+ git diff <source> <cible>
+``` 
+<ins>Exemple :</ins> Pour voir les différences entre le dernier commit et l'état actuel du répertoire de travail :
+
+``` 
+git diff HEAD
+``` 
+<ins>IV. Informations supplémentaires :</ins>
+
+Options supplémentaires : git diff offre diverses options pour personnaliser la sortie, comme limiter la portée de la différence à un fichier spécifique ou à un répertoire.
+
+Visualisation claire : Les modifications sont affichées de manière intuitive avec des symboles comme '+' pour les ajouts et '-' pour les suppressions.
+
+<ins>V. Importance :</ins>
+
+- Analyse des changements : Permet de comprendre les modifications apportées au code, ce qui est crucial pour suivre le développement d'un projet et pour débugger des problèmes.
+
+- Préparation des commits : Aide à examiner les modifications avant de les inclure dans un commit, assurant ainsi la qualité et la cohérence du code.
+
+### TAG
+
+La commande **tag** dans le contexte du développement logiciel est utilisée pour marquer des points spécifiques dans l'historique des versions d'un projet. Ces points marqués, appelés "tags", permettent de référencer des versions spécifiques du code pour les identifier facilement ultérieurement.
+
+<ins>I. Signification des "tags" :
+
+Marquer des versions : Les "tags" sont des étiquettes assignées à des commits particuliers, représentant des versions stables, des versions majeures, des jalons ou des versions spécifiques du code.
+
+<ins>II. Fonctionnement de la commande tag :
+
+Création de tags :
+
+- Annotés : Ces tags sont des versions spécifiques associées à un message pour une identification claire et sont créés à l'aide de la commande 
+``` 
+git tag -a <nom_tag> -m "Message descriptif" <commit_hash>
+``` 
+- Légers : Ces tags sont des références simples à un commit particulier et sont créés avec la commande 
+``` 
+git tag <nom_tag> <commit_hash>
+``` 
+- Liste et affichage des tags : La commande **git tag** permet d'afficher tous les tags existants dans le dépôt.
+
+<ins>III. Utilisation :
+
+Création d'un tag : Pour créer un tag annoté avec un message associé :
+
+``` 
+git tag -a v1.0 -m "Version 1.0" <commit_hash>
+``` 
+Lister les tags : Pour afficher tous les tags existants :
+``` 
+git tag
+``` 
+<ins>IV. Importance des "tags" :
+
+Repères pour les versions stables : Ils offrent des repères clairs pour identifier des versions spécifiques du code qui sont stables et peuvent être référencées facilement.
+
+Facilite la gestion des versions : Les "tags" simplifient la gestion des versions en permettant aux développeurs de revenir facilement à des versions précédentes du code si nécessaire.
