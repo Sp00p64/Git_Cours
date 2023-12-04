@@ -99,7 +99,6 @@ Syntaxe de base :
 ``` 
 <ins>Exemple :</ins> Pour voir les différences entre le dernier commit et l'état actuel du répertoire de travail :
 
-Copy code
 ``` 
 git diff HEAD
 ``` 
