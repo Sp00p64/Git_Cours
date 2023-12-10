@@ -1,5 +1,30 @@
 # Git_Cours
 
+Explication-init-add-et-commit
+## git init
+
+La commande git init crée un nouveau dépôt Git dans le répertoire courant. Elle crée un fichier .git qui contient les informations de configuration du dépôt, notamment la branche courante, les commits et les branches distantes.
+
+## git add
+
+La commande git add ajoute les modifications apportées aux fichiers à l'index Git. L'index est une zone de stockage temporaire qui contient les modifications que vous souhaitez valider.
+
+Pour ajouter tous les fichiers qui ont été modifiés ou créés, utilisez la commande suivante :
+
+"git add ."
+
+Pour ajouter un fichier spécifique, utilisez la commande suivante :
+
+"git add <fichier>"
+
+## git commit
+
+La commande git commit enregistre les modifications de l'index dans un commit. Un commit est une unité de base de la gestion de versions Git. Il contient les modifications apportées aux fichiers, la date et l'heure du commit, ainsi un message qui décrit les modifications apportées.
+
+Pour créer un commit, utilisez la commande suivante :
+
+git commit -m "message du commit"
+
 ## Présentation de l'outil GIT
 
 ### checkout
@@ -152,3 +177,4 @@ git tag
 Repères pour les versions stables : Ils offrent des repères clairs pour identifier des versions spécifiques du code qui sont stables et peuvent être référencées facilement.
 
 Facilite la gestion des versions : Les "tags" simplifient la gestion des versions en permettant aux développeurs de revenir facilement à des versions précédentes du code si nécessaire.
+main
