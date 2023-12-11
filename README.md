@@ -1,6 +1,7 @@
 # Git_Cours
 
 ## Présentation de l'outil GIT
+GIT est un système de contrôle de version décentralisé, utilisé principalement pour la gestion du code source dans le développement de logiciels. 
 ## git init
 
 La commande git init crée un nouveau dépôt Git dans le répertoire courant. Elle crée un fichier .git qui contient les informations de configuration du dépôt, notamment la branche courante, les commits et les branches distantes.
