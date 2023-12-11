@@ -219,4 +219,43 @@ Cette commande clone seulement la branche `ma-branche` du dépôt.
 
 ## Conclusion
 
-La commande `git clone` est essentielle pour commencer à travailler sur des projets existants dans Git. Elle permet de copier facilement tout le contenu d'un dépôt distant vers votre espace de travail.
+La commande `git clone` permet de copier facilement tout le contenu d'un dépôt distant vers votre espace de travail.
+
+<br>
+
+## Commande `git stash`
+
+## Introduction
+
+`git stash` est une commande Git qui permet de mettre de côté des modifications temporaires, afin de pouvoir travailler sur autre chose sans "commit" ces changements.
+
+
+### Mettre des changements en attente
+
+```bash
+git stash
+```
+
+Cette commande met en attente les modifications non commitées.
+
+### Appliquer des changements mis en attente
+
+```bash
+git stash pop
+```
+
+Cela réapplique les modifications les plus récentes mises en attente.
+
+## Options courantes
+
+- `git stash list` : Affiche la liste des stashs.
+- `git stash drop` : Supprime le stash le plus récent.
+
+## Bonnes pratiques
+
+- Utilisez `git stash` pour éviter des commits précipités.
+- Gardez une trace de ce que chaque stash contient pour éviter la confusion.
+
+## Conclusion
+
+`git stash` est un outil utile pour gérer temporairement des modifications sans perturber le flux de travail principal.
