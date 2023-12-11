@@ -1,6 +1,6 @@
 # Git_Cours
 
-Explication-init-add-et-commit
+## Présentation de l'outil GIT
 ## git init
 
 La commande git init crée un nouveau dépôt Git dans le répertoire courant. Elle crée un fichier .git qui contient les informations de configuration du dépôt, notamment la branche courante, les commits et les branches distantes.
@@ -24,35 +24,6 @@ La commande git commit enregistre les modifications de l'index dans un commit. U
 Pour créer un commit, utilisez la commande suivante :
 
 git commit -m "message du commit"
-
-## Présentation de l'outil GIT
-
-### checkout
-La commande
-``` 
-git checkout 
-```
-Permet plusieurs fonctionnalités notamment: 
-- Le changement de branches qui permet de changer de branche active dans le dépôt local. Lorsque cette commande est exécutée, Git met à jour le répertoire pour refléter la dernière révision de la branche choisie, et déplace le HEAD pour pointer sur cette branche. 
-
-    Example:
-    ``` 
-    git checkout [branche]
-    ```
-
-- La création de nouvelles branches, une nouvelle branche sera crée localement et le répéroire sera mis a jour pour se déplacer automatique vers cette nouvelle branche.
-
-    Example:
-    ``` 
-    git checkout -b [nouvelle-branche]
-    ```
-
-- La réstauration de fichier : cette commande peut également être utilisé pour restaurer un fichier à son état lors de la dernière commit cela permet d'annuler les modifications qui n'ont pas été commitées sur un fichier spécifique.
-
-    Example:
-    ``` 
-    git checkout -- [fichier]
-    ```
 
 ### PULL
 La commande
@@ -259,3 +230,30 @@ Cela réapplique les modifications les plus récentes mises en attente.
 ## Conclusion
 
 `git stash` est un outil utile pour gérer temporairement des modifications sans perturber le flux de travail principal.
+
+### Commande `checkout`
+La commande
+``` 
+git checkout 
+```
+Permet plusieurs fonctionnalités notamment: 
+- Le changement de branches qui permet de changer de branche active dans le dépôt local. Lorsque cette commande est exécutée, Git met à jour le répertoire pour refléter la dernière révision de la branche choisie, et déplace le HEAD pour pointer sur cette branche. 
+
+    Example:
+    ``` 
+    git checkout [branche]
+    ```
+
+- La création de nouvelles branches, une nouvelle branche sera crée localement et le répéroire sera mis a jour pour se déplacer automatique vers cette nouvelle branche.
+
+    Example:
+    ``` 
+    git checkout -b [nouvelle-branche]
+    ```
+
+- La réstauration de fichier : cette commande peut également être utilisé pour restaurer un fichier à son état lors de la dernière commit cela permet d'annuler les modifications qui n'ont pas été commitées sur un fichier spécifique.
+
+    Example:
+    ``` 
+    git checkout -- [fichier]
+    ```
