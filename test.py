@@ -1,2 +1,2 @@
 print("Hello World!")
-#raise Exception("Intentional error") 
+raise Exception("Intentional error") 

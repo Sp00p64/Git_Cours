@@ -34,6 +34,8 @@ D'abord modifier ce fichier :
  
 #### Si il n'y a pas d'erreur dans le script
 
-
+![Sans erreur](image.png)
 
 #### Si il y a une erreur dans le script
+
+![Avec erreur](image_erreur.png)
