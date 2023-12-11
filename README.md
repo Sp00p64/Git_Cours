@@ -178,3 +178,45 @@ Repères pour les versions stables : Ils offrent des repères clairs pour identi
 
 Facilite la gestion des versions : Les "tags" simplifient la gestion des versions en permettant aux développeurs de revenir facilement à des versions précédentes du code si nécessaire.
 main
+
+## `git clone`
+
+La commande `git clone` permet de copier un dépôt Git existant dans un nouveau répertoire, sur votre ordinateur.
+
+### Syntaxe de base
+
+```bash
+git clone <url-du-dépôt>
+```
+
+- `<url-du-dépôt>` : l'URL du dépôt Git que vous souhaitez cloner.
+
+### Exemple d'utilisation
+
+```bash
+git clone https://github.com/exemple/mondepot.git
+```
+
+Cette commande va cloner le dépôt situé à `https://github.com/exemple/mondepot.git` dans un dossier `mondepot` sur votre ordinateur.
+
+## Options courantes
+
+- `--branch <nom-de-branche>` : Permet de cloner une branche spécifique.
+- `--depth <profondeur>` : Crée un clone superficiel avec un historique à la profondeur spécifiée.
+
+### Exemple avec options
+
+```bash
+git clone --branch ma-branche https://github.com/exemple/mondepot.git
+```
+
+Cette commande clone seulement la branche `ma-branche` du dépôt.
+
+## Bonnes pratiques
+
+- Vérifiez toujours que vous clonez le bon dépôt.
+- Utilisez des clones avec depth (`--depth`) pour de gros dépôts afin d'économiser de l'espace disque et du temps.
+
+## Conclusion
+
+La commande `git clone` est essentielle pour commencer à travailler sur des projets existants dans Git. Elle permet de copier facilement tout le contenu d'un dépôt distant vers votre espace de travail.
